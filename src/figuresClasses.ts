@@ -25,10 +25,6 @@ export class Triangle implements Figure {
     if (a <= 0 || b <= 0 || c <= 0) {
       throw new Error('Triangle side should be > 0');
     }
-
-    this.a = a;
-    this.b = b;
-    this.c = c;
   }
 
   getArea(): number {
@@ -50,8 +46,6 @@ export class Circle implements Figure {
     if (radius <= 0) {
       throw new Error('Circle radius should be > 0');
     }
-
-    this.radius = radius;
   }
 
   getArea(): number {
@@ -72,9 +66,6 @@ export class Rectangle implements Figure {
     if (width <= 0 || height <= 0) {
       throw new Error('Rectangle dimensions should be > 0');
     }
-
-    this.width = width;
-    this.height = height;
   }
 
   getArea(): number {
