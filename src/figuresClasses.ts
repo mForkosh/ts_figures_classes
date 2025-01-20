@@ -48,7 +48,7 @@ export class Circle implements Figure {
     protected radius: number,
   ) {
     if (radius <= 0) {
-      throw new Error('Invalid triangle');
+      throw new Error('Circle radius should be > 0');
     }
 
     this.radius = radius;
@@ -70,7 +70,7 @@ export class Rectangle implements Figure {
     protected height: number,
   ) {
     if (width <= 0 || height <= 0) {
-      throw new Error('Invalid triangle');
+      throw new Error('Rectangle dimensions should be > 0');
     }
 
     this.width = width;
